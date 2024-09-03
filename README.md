@@ -1,0 +1,2 @@
+# Bocchiland
+Hyprland Rice
