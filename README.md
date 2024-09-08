@@ -1,8 +1,6 @@
 # Bocchiland
 Hyprland Rice
 
-Configs for: Hyprland, mako, waybar, wofi, hyprpaper
+Configs for: Hyprland, mako, waybar, wofi
 
-Wallpaper included
-
-Wallpapers if u need crop it (https://wallhaven.cc/w/3l5z63)
+Wallpapers (https://wallhaven.cc/w/3l5z63)

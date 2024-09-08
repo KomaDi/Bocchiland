@@ -1,0 +1,228 @@
+{
+	"layer": "top",
+	"position": "top",
+        "exclusive": true,
+        "height": 0,
+        "margin": "0, 5, 0, 5",
+
+	"modules-left": [
+                "cpu",
+                "temperature",
+                "memory"
+	],
+        "modules-center": [
+                "hyprland/workspaces"
+        ],
+	"modules-right": [
+		"tray",
+		"pulseaudio",
+		"backlight",
+                "battery",
+		"hyprland/language",
+                "bluetooth",
+		"network",
+                "clock#time"
+	],
+
+	// Modules
+
+	"battery": {
+		"interval": 10,
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format-time": "{H}:{M:02}",
+		"format": "{icon} {capacity}%({time})",
+		"format-charging": " {capacity}% ({time})",
+		"format-charging-full": " {capacity}%",
+		"format-full": "{icon} {capacity}%",
+		"format-alt": "{icon} {power}W",
+		"format-icons": [
+			" ",
+			" ",
+			" ",
+			" ",
+			" "
+		],
+		"tooltip": false
+	},
+
+	"clock#time": {
+		"interval": 10,
+		"format": " {:%H:%M}",
+		"tooltip": true,
+                "tooltip-format": "{:%e %B %Y}"
+	},
+
+	"clock#date": {
+		"interval": 20,
+		"format": "{:%e %b %Y}",
+		"tooltip": false
+		//"tooltip-format": "{:%e %B %Y}"
+	},
+
+	"cpu": {
+		"interval": 5,
+		"tooltip": false,
+		"format": "  {usage}%",
+		"format-alt": "  {load}",
+		"states": {
+			"warning": 70,
+			"critical": 90
+		}
+	},
+
+	"hyprland/language": {
+		"format": "  {}",
+                "format-ru": "RU",
+                "format-en": "US",
+		"tooltip": false
+	},
+
+	"memory": {
+		"interval": 5,
+		"format": " {used:0.1f}G/{total:0.1f}G",
+		"states": {
+			"warning": 70,
+			"critical": 90
+		},
+		"tooltip": false
+	},
+
+	"network": {
+		"interval": 5,
+		"format-wifi": " {signalStrength}%",
+		"format-ethernet": "",
+		"format-disconnected": "Нет подключения",
+		"format-alt": " {ipaddr}/{cidr}",
+                "on-click-right": "kitty --hold sh -c nmtui",
+                "tooltip-format": "{essid}{ifname}",
+		"tooltip": true
+	},
+
+	"hyprland/mode": {
+		"format": "{}",
+		"tooltip": false
+	},
+
+	"hyprland/window": {
+		"format": "{}",
+		"max-length": 50,
+		"tooltip": false
+	},
+
+	"hyprland/workspaces": {
+		"disable-scroll-wraparound": false,
+		"smooth-scrolling-threshold": 4,
+		"enable-bar-scroll": true,
+		"format": "{name}"
+	},
+
+	"pulseaudio": {
+		"format": "{icon}  {volume}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": ["", ""]
+		},
+		"scroll-step": 1,
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+                "on-click-right": "pavucontrol", 
+		"tooltip": false
+	},
+
+	"temperature": {
+		"critical-threshold": 90,
+		"interval": 5,
+		"format": "{icon} {temperatureC}°",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"tooltip": false
+	},
+
+	"tray": {
+		"icon-size": 18,
+		"spacing": 6
+	},
+
+        "backlight": {
+		// "device": "acpi_video1",
+		"format": "{icon} {percent}%",
+		"format-icons": [" ", " "],
+                "tooltip": false
+	},
+
+        "idle_inhibitor": {
+                "format": "{icon}",
+                "tooltip": true,
+                "format-icons":{
+                     "activated": " ",
+                     "deactivated": " "
+        },
+        "on-click-right": "hyprlock"
+
+},
+
+        "bluetooth": {
+    "format-on": "",
+    "format-off": "-",
+    "format-disabled": "",
+    "format-connected": "<b></b>",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "kitty --hold sh -c bluetuith",
+        },
+
+        "custom/notification": {
+    "tooltip": false,
+  "format": "{icon}",
+  "format-icons": {
+    "notification": "󱅫 ",
+    "none": " ",
+    "dnd-notification": " ",
+    "dnd-none": "󰂛 ",
+    "inhibited-notification": " ",
+    "inhibited-none": " ",
+    "dnd-inhibited-notification": " ",
+    "dnd-inhibited-none": " ",
+  },
+  "return-type": "json",
+  "exec-if": "which swaync-client",
+  "exec": "swaync-client -swb",
+  "on-click": "sleep 0.1 && swaync-client -t -sw",
+  "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+  "escape": true,
+  },
+
+        "custom/drun": {
+    "format": "W",
+    "on-click": "wofi --show drun",
+    "return-type": "json",
+    "tooltip": false,
+  },
+        "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+   }
+}
+// vi:ft=jsonc
+  
