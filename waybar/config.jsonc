@@ -36,21 +36,21 @@
 		"format": "{icon} {capacity}%({time})",
 		"format-charging": " {capacity}% ({time})",
 		"format-charging-full": " {capacity}%",
-		"format-full": "{icon} {capacity}%",
+		"format-full": "{icon}  {capacity}%",
 		"format-alt": "{icon} {power}W",
 		"format-icons": [
-			" ",
-			" ",
-			" ",
-			" ",
-			" "
+			"",
+			"",
+			"",
+			"",
+			""
 		],
 		"tooltip": false
 	},
 
 	"clock#time": {
 		"interval": 10,
-		"format": " {:%H:%M}",
+		"format": " {:%H:%M}",
 		"tooltip": true,
                 "tooltip-format": "{:%e %B %Y}"
 	},
@@ -74,7 +74,7 @@
 	},
 
 	"hyprland/language": {
-		"format": "  {}",
+		"format": " {}",
                 "format-ru": "RU",
                 "format-en": "US",
 		"tooltip": false
@@ -116,21 +116,21 @@
 		"disable-scroll-wraparound": false,
 		"smooth-scrolling-threshold": 4,
 		"enable-bar-scroll": true,
-		"format": "{name}"
+		"format": " "
 	},
 
 	"pulseaudio": {
-		"format": "{icon}  {volume}%",
-		"format-bluetooth": "{icon}  {volume}%",
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon} {volume}%",
 		"format-muted": "",
 		"format-icons": {
-			"headphone": "",
-			"hands-free": "",
-			"headset": "",
-			"phone": "",
-			"portable": "",
-			"car": "",
-			"default": ["", ""]
+			"headphone": " ",
+			"hands-free": " ",
+			"headset": " ",
+			"phone": " ",
+			"portable": " ",
+			"car": " ",
+			"default": [" ", " "]
 		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -178,7 +178,7 @@
         "bluetooth": {
     "format-on": "",
     "format-off": "-",
-    "format-disabled": "",
+    "format-disabled": "-",
     "format-connected": "<b></b>",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
