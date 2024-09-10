@@ -15,7 +15,7 @@ window#waybar {
 
 #workspaces button {
     padding: 0 5px 0 5px;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0);
     border: 2px solid #fea94c;
     color: #fea94c;
     margin: 5px 2px 0 2px;
@@ -45,7 +45,7 @@ window#waybar {
 #language {
     border: 2px solid #3e69a0;
     border-right: 0;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0);
     margin-right: 0;
     margin-left: 2px;
     margin-top: 5px;    
@@ -60,18 +60,18 @@ window#waybar {
     border-left: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0);
     margin-top: 5px;
     margin-left: 0;
     margin-right: 0;
-    padding: 3px 6px 3px 8px;
+    padding: 3px 6px 3px 6px;
     color: #3e69a0;
 }
 
 #battery {
     border: 2px solid #fe504b;
     border-left: 0;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0);
     padding: 3px 6px 3px 6px;
     margin-top: 5px;
     margin-left: 0;
@@ -89,7 +89,7 @@ window#waybar {
 #pulseaudio {
     border: 2px solid #fe504b;
     border-right: 0;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0);
     padding: 3px 6px 3px 6px;
     margin-top: 5px;   
     margin-left: 2px;
@@ -103,7 +103,7 @@ window#waybar {
     border: 2px solid #fe504b;
     border-left: 0;
     border-right: 0;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0);
     padding: 0 6px 0 6px;
     margin-top: 5px;
     
@@ -117,7 +117,7 @@ window#waybar {
     border: 2px solid #3e69a0;
     border-left: 0;
     border-right: 0;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0);
     padding: 3px 8px 3px 8px;
     margin-top: 5px;
     
@@ -168,7 +168,7 @@ window#waybar.empty #window {
 
 #tray {
    border: 2px solid #fe504b;
-   background-color: rgb(255,255,255);
+   background-color: rgba(255, 255, 255, 0);
    padding: 4px 4px 3px 4px;
    margin-top: 5px;
    
@@ -208,7 +208,7 @@ window#waybar.empty #window {
    border: 2px solid #3e69a0;
    border-right: 0;
    border-left: 0;
-   background-color: rgb(255,255,255);
+   background-color: rgba(255, 255, 255, 0);
    margin-left: 0;
    margin-top: 5px;
    
@@ -266,7 +266,7 @@ tooltip label {
    border-bottom-right-radius: 0;
    padding: 0 6px 0 8px;
    margin-top: 5px;
-   background-color: rgb(255,255,255);
+   background-color: rgba(255, 255, 255, 0);
 }
 
 #temperature {
@@ -276,7 +276,7 @@ tooltip label {
    color: #fd7cb4;
    padding: 0 6px 0 8px;
    border-radius: 0;
-   background-color: rgb(255,255,255);
+   background-color: rgba(255, 255, 255, 0);
 }
 
 #memory {
@@ -288,5 +288,5 @@ tooltip label {
    border-top: 2px solid #fd7cb4;
    border-bottom: 2px solid #fd7cb4;
    border-right: 2px solid #fd7cb4;
-   background-color: rgb(255,255,255);
+   background-color: rgba(255, 255, 255, 0);
 }
