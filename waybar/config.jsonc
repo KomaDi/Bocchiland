@@ -50,7 +50,7 @@
 
 	"clock#time": {
 		"interval": 10,
-		"format": " {:%H:%M}",
+		"format": "  {:%H:%M}",
 		"tooltip": true,
                 "tooltip-format": "{:%e %B %Y}"
 	},
@@ -74,7 +74,7 @@
 	},
 
 	"hyprland/language": {
-		"format": " {}",
+		"format": "  {}",
                 "format-ru": "RU",
                 "format-en": "US",
 		"tooltip": false
@@ -116,12 +116,12 @@
 		"disable-scroll-wraparound": false,
 		"smooth-scrolling-threshold": 4,
 		"enable-bar-scroll": true,
-		"format": " "
+		"format": ""
 	},
 
 	"pulseaudio": {
-		"format": "{icon} {volume}%",
-		"format-bluetooth": "{icon} {volume}%",
+		"format": "{icon}  {volume}%",
+		"format-bluetooth": "{icon}  {volume}%",
 		"format-muted": "",
 		"format-icons": {
 			"headphone": " ",
@@ -130,7 +130,7 @@
 			"phone": " ",
 			"portable": " ",
 			"car": " ",
-			"default": [" ", " "]
+			"default": ["", ""]
 		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",

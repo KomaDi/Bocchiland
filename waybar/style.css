@@ -2,7 +2,8 @@
 
     border: none;
     border-radius: 6px;
-    font-family: "Roboto Mono Medium";
+    font-family: "Roboto Bold";
+    font-weight: 600;
     font-size: 14px;
     color: rgba(50, 50, 50, 1);
 }
@@ -14,7 +15,7 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0 5px 0 5px;
+    padding: 0 9px 0 3px;
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid #fea94c;
     color: #fea94c;
@@ -34,7 +35,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    padding: 0 10px 0 10px;
+    padding: 0 18px 0 12px;
     color: #fea94c;
 }
 
