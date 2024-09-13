@@ -6,6 +6,7 @@
         "margin": "0, 5, 0, 5",
 
 	"modules-left": [
+                "keyboard-state",
                 "cpu",
                 "temperature",
                 "memory"
@@ -33,7 +34,7 @@
 			"critical": 15
 		},
 		"format-time": "{H}:{M:02}",
-		"format": "{icon} {capacity}%({time})",
+		"format": "{icon}  {capacity}%({time})",
 		"format-charging": " {capacity}% ({time})",
 		"format-charging-full": " {capacity}%",
 		"format-full": "{icon}  {capacity}%",
@@ -92,7 +93,7 @@
 
 	"network": {
 		"interval": 5,
-		"format-wifi": " {signalStrength}%",
+		"format-wifi": "  {signalStrength}%",
 		"format-ethernet": "",
 		"format-disconnected": "Нет подключения",
 		"format-alt": " {ipaddr}/{cidr}",
@@ -120,8 +121,8 @@
 	},
 
 	"pulseaudio": {
-		"format": "{icon}  {volume}%",
-		"format-bluetooth": "{icon}  {volume}%",
+		"format": "{icon} {volume}%",
+		"format-bluetooth": "{icon} {volume}%",
 		"format-muted": "",
 		"format-icons": {
 			"headphone": " ",
@@ -130,7 +131,7 @@
 			"phone": " ",
 			"portable": " ",
 			"car": " ",
-			"default": ["", ""]
+			"default": [" ", " "]
 		},
 		"scroll-step": 1,
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -215,12 +216,12 @@
     "tooltip": false,
   },
         "keyboard-state": {
-        "numlock": true,
+        "numlock": false,
         "capslock": true,
-        "format": "{name} {icon}",
+        "format": "{icon} {name}",
         "format-icons": {
-            "locked": "",
-            "unlocked": ""
+            "locked": " ",
+            "unlocked": " "
         }
    }
 }
