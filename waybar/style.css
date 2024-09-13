@@ -292,7 +292,7 @@ tooltip label {
 
 #keyboard-state {
    margin-top: 0;
-   padding: 1px 8px 0 6px;
+   padding: 0 8px 0 6px;
    border-top-right-radius: 0;
    border-bottom-right-radius: 0;
    border-top: 2px solid #fd7cb4;
