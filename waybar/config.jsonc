@@ -3,7 +3,7 @@
 	"position": "top",
         "exclusive": true,
         "height": 30,
-        "margin": "5, 5, 0, 5",
+        "margin": "0, 0, 0, 0",
 
 	"modules-left": [
                 "keyboard-state",
@@ -117,7 +117,12 @@
 		"disable-scroll-wraparound": false,
 		"smooth-scrolling-threshold": 4,
 		"enable-bar-scroll": true,
-		"format": ""
+		"format": "",
+                "format-icons": {
+                   "active": "",
+                   "urgent": "",
+                   "default": ""
+                }                  
 	},
 
 	"pulseaudio": {

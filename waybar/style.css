@@ -6,20 +6,20 @@
     font-weight: 600;
     font-size: 14px;
     color: rgba(50, 50, 50, 1);
+    min-height: 0px;
 }
 
 window#waybar {
     background-color: rgba(255, 255, 255, 0);
     border-radius: 6px;
-    margin-bottom: 5px;
 }
 
 #workspaces button {
-    padding: 1px 9px 0 3px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #fea94c;
+    background-color: #fea94c;
     color: #fea94c;
-    margin: 0 2px 0 2px;
+    padding: 0 2px 0 1px;
+    margin: 0 6px 0 6px;
+    border-radius: 100px;
 }
 
 #workspaces button label {
@@ -35,8 +35,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-    padding: 1px 18px 0 12px;
     color: #fea94c;
+    padding: 0 10px 0 10px;
 }
 
 #workspaces button.active label {
@@ -45,50 +45,40 @@ window#waybar {
 
 #language {
     border: 2px solid #3e69a0;
+    border-left: 0;
     border-right: 0;
-    background-color: rgba(255, 255, 255, 0);
-    margin-right: 0;
-    margin-left: 2px;
-    margin-top: 0;    
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    padding: 1px 6px 0 6px;
+    border-top: 0;
+    background-color: rgba(255, 255, 255, 0);    
+    border-radius: 0;
+    padding: 1px 6px 0 7px;
     color: #3e69a0;
 }
 
 #clock {
     border: 2px solid #3e69a0;
+    border-right: 0;
     border-left: 0;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top: 0;
+    border-radius: 0;
     background-color: rgba(255, 255, 255, 0);
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
     padding: 1px 6px 0 6px;
     color: #3e69a0;
 }
 
 #battery {
     border: 2px solid #fe504b;
+    border-right: 0;
     border-left: 0;
+    border-top: 0;
     background-color: rgba(255, 255, 255, 0);
-    padding: 1px 6px 0 6px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 2px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    padding: 1px 7px 0 6px;
+    border-radius: 0;
     color: #fe504b;
-}
-
-#battery icon {
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
 }
 
 #pulseaudio {
     border: 2px solid #fe504b;
+    border-top: 0;
     border-right: 0;
     background-color: rgba(255, 255, 255, 0);
     padding: 1px 6px 0 6px;
@@ -96,20 +86,18 @@ window#waybar {
     margin-left: 2px;
     margin-right: 0;
     border-top-right-radius: 0;
+    border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     color: #fe504b;
 }
 
 #backlight {
     border: 2px solid #fe504b;
+    border-top: 0;
     border-left: 0;
     border-right: 0;
     background-color: rgba(255, 255, 255, 0);
     padding: 1px 8px 0 8px;
-    margin-top: 0;
-    
-    margin-left: 0;
-    margin-right: 0;
     border-radius: 0;
     color: #fe504b;
 }
@@ -118,10 +106,10 @@ window#waybar {
     border: 2px solid #3e69a0;
     border-left: 0;
     border-right: 0;
+    border-top: 0;
     background-color: rgba(255, 255, 255, 0);
     padding: 1px 8px 0 8px;
-    margin-top: 0;
-    
+    margin-top: 0;    
     margin-right: 0;
     margin-left: 0;
     border-radius: 0;
@@ -156,23 +144,20 @@ window#waybar.empty #window {
 }
 
 #workspaces {
-    border: 0;
-    border-color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(200, 200, 200, 0);
-    padding: 0;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    
-    color: rgba(50, 50, 50, 0);
+    border: 2px solid #fea94c;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 5px 0 5px 0;
 }
 
 #tray {
-   border: 2px solid #fe504b;
+   border: 0 solid #fe504b;
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
    background-color: rgba(255, 255, 255, 0);
    padding: 0 4px 0 4px;
-   margin-top: 0;
-   
+   margin-top: 0;   
    margin-left: 0;
    margin-right: 2px;
 }
@@ -209,10 +194,10 @@ window#waybar.empty #window {
    border: 2px solid #3e69a0;
    border-right: 0;
    border-left: 0;
+   border-top: 0;
    background-color: rgba(255, 255, 255, 0);
    margin-left: 0;
    margin-top: 0;
-   
    border-radius: 0;
    padding: 1px 8px 0 7px;
    color: #3e69a0;
@@ -235,9 +220,6 @@ tooltip label {
     border-left: 0;
    background-color: rgba(200, 200, 200, 0.7);
    padding: 3px 3px 3px 3px;
-   margin-top: 0px;
-   margin-right: 8px;
-   
    border-top-left-radius: 0;
    border-bottom-left-radius: 0;   
 }
@@ -260,16 +242,13 @@ tooltip label {
 
 #cpu {
    border-bottom: 2px solid #fd7cb4;
-   border-top: 2px solid #fd7cb4;
    color: #fd7cb4;
    border-radius: 0;
    padding: 1px 6px 0 6px;
-   margin-top: 0;
    background-color: rgba(255, 255, 255, 0);
 }
 
 #temperature {
-   border-top: 2px solid #fd7cb4;
    border-bottom: 2px solid #fd7cb4;
    margin-top: 0;
    color: #fd7cb4;
@@ -283,21 +262,17 @@ tooltip label {
    padding: 1px 6px 0 6px;
    color: #fd7cb4;
    border-top-left-radius: 0;
+   border-top-right-radius: 0;
    border-bottom-left-radius: 0;
-   border-top: 2px solid #fd7cb4;
    border-bottom: 2px solid #fd7cb4;
    border-right: 2px solid #fd7cb4;
    background-color: rgba(255, 255, 255, 0);
 }
 
 #keyboard-state {
-   margin-top: 0;
    padding: 0 8px 0 6px;
-   border-top-right-radius: 0;
-   border-bottom-right-radius: 0;
-   border-top: 2px solid #fd7cb4;
+   border-radius: 0;
    border-bottom: 2px solid #fd7cb4;
-   border-left: 2px solid #fd7cb4;
 }
 
 #keyboard-state label {
